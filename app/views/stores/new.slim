@@ -1,0 +1,16 @@
+h1 Create Store
+
+= form_tag stores_path
+  = label_tag :name
+  = text_field_tag :name, nil, name: "store[name]"
+
+  = label_tag :description
+  = text_area_tag :description, nil, name: "store[description]"
+
+  = label_tag :owner_email, "Email"
+  = text_field_tag :owner_email, nil, name: "store[owner_email]"
+
+  = label_tag :owner_password, "Password"
+  = password_field_tag :owner_password, nil, name: "store[owner_password]"
+
+  = submit_tag "Create"
